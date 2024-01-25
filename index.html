@@ -83,7 +83,7 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li class="text-red-500"><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Blog</a></li>
                     <li><a>Pages</a></li>
@@ -99,30 +99,44 @@
     </header>
     <main>
         <!-- Carousel-Section  -->
-        <div class="  carousel mx-4 lg:mx-24 mt-24  lg:mt-12 ">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
 
+        <div class="relative">
+            <div class="  carousel mx-4 lg:mx-24 mt-24  lg:mt-12 ">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class=" mt-12 lg:absolute lg:-mt-72 lg:translate-x-full lg:ml-72">
+                <div class=" mx-4 lg:mx-12 mt-10  lg:mt-12 bg-[#131318] p-8  justify-around max-w-lg rounded-2xl">
+                    <h3 class="font-bold text-2xl text-white">Meet all the heroes from the field</h3>
+                    <p class=" mt-4 text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
         </div>
+
         <!-- Carousel-Section end  -->
 
         <section>
             <!-- Professional Hockeys Club section -->
             <div class="text-center mt-24 mx-4 lg:mx-24 ">
                 <h3 class="font-extrabold text-4xl">Professional Hockeys Club</h3>
-                <p class="font-medium mt-4">The National Hockey League is a professional ice hockey league in North America comprising</p>
+                <p class="font-medium mt-4">The National Hockey League is a professional ice hockey league in North
+                    America comprising</p>
 
             </div>
             <!-- progress section -->
@@ -132,13 +146,15 @@
                     <div class="radial-progress text-amber-400 " style="--value:70;" role="progressbar"><span
                             class="font-extrabold text-black">70%</span></div>
                     <h4 class="font-semibold text-2xl mt-4">Prayer Facility</h4>
-                    <p class="mt-3">Most players know you play hockey on the ice. You get changed in the locker room.</p>
+                    <p class="mt-3">Most players know you play hockey on the ice. You get changed in the locker room.
+                    </p>
                 </div>
                 <div>
                     <div class="radial-progress text-red-500 " style="--value:80;" role="progressbar"><span
                             class="font-extrabold text-black">80%</span></div>
                     <h4 class="font-semibold text-2xl mt-4">Experienced Coach</h4>
-                    <p class="mt-3">A hockey coach leadership skills, and extensive knowledge of coaching techniques.</p>
+                    <p class="mt-3">A hockey coach leadership skills, and extensive knowledge of coaching techniques.
+                    </p>
                 </div>
                 <div>
                     <div class="radial-progress text-blue-600 " style="--value:92;" role="progressbar"><span
@@ -150,63 +166,77 @@
                     <div class="radial-progress text-amber-800 " style="--value:87;" role="progressbar"><span
                             class="font-extrabold text-black">87%</span></div>
                     <h4 class="font-semibold text-2xl mt-4">Training Ground</h4>
-                    <p class="mt-3">My Training Surface those tiles allow you to create your rink and it is the ultimate training ground .</p>
+                    <p class="mt-3">My Training Surface those tiles allow you to create your rink and it is the ultimate
+                        training ground .</p>
                 </div>
                 <!-- progress section  end -->
         </section>
 
         <!-- Program Sections start -->
-        <section class="mt-24 text-center mx-4 lg:mx-24 ">
+        <section class="mt-24  mx-4 lg:mx-24 ">
 
-            <h3 class="font-extrabold text-4xl ">Program Sections</h3>
-            <p class="mt-4">Elite Hockey Program emphasizes the development of a well-rounded player through highly qualified  </p>
-
+            <h3 class="font-extrabold  text-center text-4xl ">Program Sections</h3>
+            <p class="mt-4 text-center">Elite Hockey Program emphasizes the development of a well-rounded player through highly
+                qualified </p>
+    
             <div class="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-1 ">
+    
                 <div >
-                    <div class="hero min-h-screen rounded-3xl  " style="background-image: url(Images/2.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero rounded-3xl   w-full lg:max-w-full h-[280px] lg:h-[340px]    bg-center bg-cover"
+                        style="  background-image: url(Images/2.png);">
+                        <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-md text-left">
-                                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
-                                <p class="mb-5">USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills and is an important part of the organization.</p>
-                                <button class="btn btn-color text-white">Register Now!</button>
+                            <div class="max-w-md text-left  lg:mt-10 lg:mr-28">
+                                <h1 class="mb-5 text-5xl font-bold ">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="hero min-h-screen rounded-3xl  " style="background-image: url(Images/3.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
+            
+                <div >
+                    <div class="hero rounded-3xl   w-ful lg:max-w-full h-[300px] lg:h-[340px]    bg-center bg-cover"
+                        style="  background-image: url(Images/3.png);">
+                        <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-md text-left ">
-                                <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
-                                <p class="mb-5">Hockey 4 Youth is a charitable organization that provides new Canadian youth with an opportunity to play ice hockey at no cost while learning valuable life </p>
-                                <button class="btn btn-color text-white">Register Now!</button>
+                            <div class="max-w-md text-left  lg:mt-10 lg:mr-28">
+                                <h1 class="mb-5 text-5xl font-bold ">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            
                 <div class="col-span-2">
-                    <div class="hero min-h-screen rounded-3xl  " style="background-image: url(Images/4.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero rounded-3xl   w-ful lg:max-w-full h-[300px] lg:h-[450px]    bg-center bg-cover"
+                        style="  background-image: url(Images/4.png);">
+                        <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
                         <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-md text-left ">
-                                <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
-                                <p class="mb-5">The Hockey Skating 1 online course is designed to assist professional figure skating coaches with coaching hockey players.</p>
-                                <button class="btn btn-color text-white">Register Now!</button>
+                            <div class="max-w-md text-left  lg:mt-36 lg:-ml-[820px]">
+                                <h1 class="mb-5 text-5xl font-bold ">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            
+                
+    
             </div>
-
-
+    
+    
         </section>
         <!-- Our New Products Sections start -->
         <section class="mt-24 text-center mx-4 lg:mx-24  ">
             <h3 class="font-extrabold text-4xl "> Our New Products</h3>
-            <p class="mt-4">Want to be up to date with the latest hockey products? Check out the newest hockey skates, sticks, gear and more at HockeyMonkey!.</p>
+            <p class="mt-4">Want to be up to date with the latest hockey products? Check out the newest hockey skates,
+                sticks, gear and more at HockeyMonkey!.</p>
             <div class="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 ">
                 <!-- Products Sections 01 -->
                 <div class="border rounded-xl justify-center gap-4 p-3  lg:flex items-center py-4">
@@ -220,7 +250,8 @@
                             <p>200</p>
                         </div>
                         <h3 class="font-bold text-2xl mt-4 ">World Cup Flags Football</h3>
-                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and flag wristbands, </p>
+                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and
+                            flag wristbands, </p>
                         <div class=" flex lg:flex-col gap-3 mt-2 ">
                             <h4 class="  text-red-500 mt font-bold text-xl">Price - $22.00</h4>
                             <p class=" font-medium text-[#13131880] "><i class="fa-solid fa-cart-shopping"></i> Delivery
@@ -243,7 +274,8 @@
                             <p>200</p>
                         </div>
                         <h3 class="font-bold text-2xl mt-4 ">World Cup Flags Football</h3>
-                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and flag wristbands,. </p>
+                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and
+                            flag wristbands,. </p>
                         <div class=" flex lg:flex-col gap-3 mt-2 ">
                             <h4 class="  text-red-500 mt font-bold text-xl">Price - $22.00</h4>
                             <p class=" font-medium text-[#13131880] "><i class="fa-solid fa-cart-shopping"></i> Delivery
@@ -268,7 +300,8 @@
                             <p>200</p>
                         </div>
                         <h3 class="font-bold text-2xl mt-4 ">Cap For Hockeys</h3>
-                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and flag wristbands,. </p>
+                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and
+                            flag wristbands,. </p>
                         <div class=" flex lg:flex-col gap-3 mt-2 ">
                             <h4 class="  text-red-500 mt font-bold text-xl">Price - $22.00</h4>
                             <p class=" font-medium text-[#13131880] "><i class="fa-solid fa-cart-shopping"></i> Delivery
@@ -293,7 +326,8 @@
                             <p>200</p>
                         </div>
                         <h3 class="font-bold text-2xl mt-4 ">World Cup Flags Football</h3>
-                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and flag wristbands, </p>
+                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and
+                            flag wristbands, </p>
                         <div class=" flex lg:flex-col gap-3 mt-2 ">
                             <h4 class="  text-red-500 mt font-bold text-xl">Price - $22.00</h4>
                             <p class=" font-medium text-[#13131880] "><i class="fa-solid fa-cart-shopping"></i> Delivery
@@ -318,7 +352,8 @@
                             <p>200</p>
                         </div>
                         <h3 class="font-bold text-2xl mt-4 ">World Cup Flags Football</h3>
-                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and flag wristbands. </p>
+                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and
+                            flag wristbands. </p>
                         <div class=" flex lg:flex-col gap-3 mt-2 ">
                             <h4 class="  text-red-500 mt font-bold text-xl">Price - $22.00</h4>
                             <p class=" font-medium text-[#13131880] "><i class="fa-solid fa-cart-shopping"></i> Delivery
@@ -343,7 +378,8 @@
                             <p>200</p>
                         </div>
                         <h3 class="font-bold text-2xl mt-4 ">World Cup Flags Football</h3>
-                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and flag wristbands,. </p>
+                        <p class="mt-2 p-primary">Get ready for the Men's World Cup with these lovely country name and
+                            flag wristbands,. </p>
                         <div class=" flex lg:flex-col gap-3 mt-2 ">
                             <h4 class="  text-red-500 mt font-bold text-xl">Price - $22.00</h4>
                             <p class=" font-medium text-[#13131880] "><i class="fa-solid fa-cart-shopping"></i> Delivery
@@ -363,7 +399,8 @@
 
         <section class="mt-24 text-center mx-4 lg:mx-24  ">
             <h3 class="font-extrabold text-4xl ">Clients Question</h3>
-            <p class="mt-4">Explain a time you had to deal with an upset customer, how did you react? 1 Answer. Be the first to find this interview helpful.</p>
+            <p class="mt-4">Explain a time you had to deal with an upset customer, how did you react? 1 Answer. Be the
+                first to find this interview helpful.</p>
             <div class="mt-12 border rounded-2xl gap-11 p-10  flex flex-col lg:flex-row   ">
                 <div>
                     <img src="Images/11.png" alt="">
@@ -375,7 +412,8 @@
                             Our Equipment
                         </div>
                         <div class="collapse-content">
-                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and an additional 9 for hockey goalies.</p>
+                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and
+                                an additional 9 for hockey goalies.</p>
                         </div>
                     </div>
                     <hr>
@@ -385,7 +423,8 @@
                             Hockey Training
                         </div>
                         <div class="collapse-content">
-                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and an additional 9 for hockey goalies.</p>
+                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and
+                                an additional 9 for hockey goalies.</p>
                         </div>
                     </div>
                     <hr>
@@ -395,7 +434,8 @@
                             Private Lessons
                         </div>
                         <div class="collapse-content">
-                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and an additional 9 for hockey goalies.</p>
+                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and
+                                an additional 9 for hockey goalies.</p>
                         </div>
                     </div>
                     <hr>
@@ -405,7 +445,8 @@
                             Ski Touring
                         </div>
                         <div class="collapse-content">
-                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and an additional 9 for hockey goalies.</p>
+                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and
+                                an additional 9 for hockey goalies.</p>
                         </div>
                     </div>
                     <hr>
@@ -415,7 +456,8 @@
                             Booking
                         </div>
                         <div class="collapse-content">
-                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and an additional 9 for hockey goalies..</p>
+                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and
+                                an additional 9 for hockey goalies..</p>
                         </div>
                     </div>
                     <hr>
@@ -425,7 +467,8 @@
                             Pricings
                         </div>
                         <div class="collapse-content">
-                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and an additional 9 for hockey goalies..</p>
+                            <p>There's a lot of equipment you need to in field hockey. 9 pieces for outfield players and
+                                an additional 9 for hockey goalies..</p>
                         </div>
                     </div>
                 </div>
@@ -436,7 +479,8 @@
         <!-- get in touch section start -->
         <section class="mt-24 text-center mx-4 lg:mx-24  ">
             <h3 class="font-extrabold text-4xl ">Get In Touch</h3>
-            <p class="mt-4">Do you need to contact Hockey Factory Shop regarding your order or potential order? You can reach us by Phone, Email, Post or on Social Media!</p>
+            <p class="mt-4">Do you need to contact Hockey Factory Shop regarding your order or potential order? You can
+                reach us by Phone, Email, Post or on Social Media!</p>
             <div class=" mt-16 gap-11 flex flex-col lg:flex-row ">
                 <div class="border rounded-2xl ">
                     <div class="bg-[#BCED6D1A] rounded-2xl  p-10 m-12 text-left w-72 lg:w-96 ">
@@ -491,9 +535,9 @@
                     <div class="text-left mt-10">
                         <h3 class="font-bold text-xl ">Message</h3>
                         <div class="border mt-8 rounded-xl p-3 h-96 bg-[#0D0D1208]">
-                            
-    
-                            <textarea id="w3review" placeholder="Write your message " name="w3review" rows="0" cols="0"> 
+
+
+                            <textarea id="w3review" placeholder="Write your message " name="w3review" rows="0" cols="0">
                             </textarea>
                         </div>
                     </div>
@@ -532,7 +576,8 @@
 
             <div class="col-span-2 footer-pri">
                 <h2 class="font-extrabold text-3xl text-left text-white  ">Get In Touch</h2>
-                <p class="mt-4">Do you need to contact Hockey Factory Shop regarding your order or potential order? You can reach us by Phone, Email, Post or on Social Media! </p>
+                <p class="mt-4">Do you need to contact Hockey Factory Shop regarding your order or potential order? You
+                    can reach us by Phone, Email, Post or on Social Media! </p>
                 <p class=" mt-4 flex gap-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
